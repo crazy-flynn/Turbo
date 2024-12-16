@@ -23,9 +23,10 @@ jobs:
           distribution: 'temurin'  # 使用 Temurin 发行版
           cache: maven  # 缓存 Maven 依赖，提高执行速度
 
+      # 使用 Maven 构建项目
       - name: Build with Maven
-        run: mvn -B package --file pom.xml  # 使用 Maven 构建项目
+        run: mvn -B package --file pom.xml  
 
       # Optional: Upload the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
-        uses: advanced-security/maven-dependency-submission-action@latest  # 提交 Maven 依赖图
+        uses: advanced-security/maven-dependency-submission-action@v1  # 提交 Maven 依赖图
