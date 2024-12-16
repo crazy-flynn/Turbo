@@ -17,5 +17,19 @@
         <module>turbo-warehouse</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>turbo</id>
+            <url>https://maven.pkg.github.com/crazy-flynn/Turbo</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>turbo</id>
+            <url>https://maven.pkg.github.com/crazy-flynn/Turbo</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
